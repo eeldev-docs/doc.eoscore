@@ -1,4 +1,4 @@
-# Authentication: Steam
+# Authentication: Steam App Ticket
 
 ## Requirements
 - Your own AppId on Steam
