@@ -2,6 +2,10 @@
 sidebar_position: 3
 ---
 
+:::info Video Tutorial is available
+[Video Tutorial](../videos/installing-and-configuring.mdx)
+:::
+
 # Configuring Online Subsystem
 
 :::tip NOTE

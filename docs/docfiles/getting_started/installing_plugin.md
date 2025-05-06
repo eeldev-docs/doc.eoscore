@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+:::info Video Tutorial is available
+[Video Tutorial](../videos/installing-and-configuring.mdx)
+:::
+
 # Installing the Plugin 
 You can install the plugin using the Epic Launcher
 

@@ -2,6 +2,10 @@
 sidebar_position: 4
 ---
 
+:::info Video Tutorial is available
+[Video Tutorial](../videos/installing-and-configuring.mdx)
+:::
+
 # Setting up Client & Policy Settings
 
 :::tip NOTE
