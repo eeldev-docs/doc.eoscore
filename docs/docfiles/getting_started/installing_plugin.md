@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 
+# Installing the Plugin 
+You can install the plugin using the Epic Launcher
+
 :::info Video Tutorial is available
 [Video Tutorial](../videos/installing-and-configuring.mdx)
 :::
-
-# Installing the Plugin 
-You can install the plugin using the Epic Launcher
 
 ## Disable Engine EOS
 - You have to **disable** the EOS plugins that comes with the engine as these will collide with the plugin.

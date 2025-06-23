@@ -13,6 +13,8 @@ Autentication ID for Auto-Login
 Authentication Token for Auto-Login
 - **–EOSConfig=configurationName**<br />
 Override the default config name used in Project settings
+- **-DisableEOSOverlay**<br />
+Disables the EOS overlay
 
 ## Example Usage
 - Logging in to your instance of DevTool at localhost:1111

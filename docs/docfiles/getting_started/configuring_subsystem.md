@@ -2,11 +2,11 @@
 sidebar_position: 3
 ---
 
+# Configuring Online Subsystem
+
 :::info Video Tutorial is available
 [Video Tutorial](../videos/installing-and-configuring.mdx)
 :::
-
-# Configuring Online Subsystem
 
 :::tip NOTE
 Make sure you don’t already have any of the below defintions already defined in your DefaultEngine.ini, duplicate entries will break the configuration

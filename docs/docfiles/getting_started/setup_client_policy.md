@@ -2,11 +2,11 @@
 sidebar_position: 4
 ---
 
+# Setting up Client & Policy Settings
+
 :::info Video Tutorial is available
 [Video Tutorial](../videos/installing-and-configuring.mdx)
 :::
-
-# Setting up Client & Policy Settings
 
 :::tip NOTE
 Beware, this client example will grant the client ALL PRIVILEGES, this might not be ideal in a Live project but it will be fine for testing/development purposes.
