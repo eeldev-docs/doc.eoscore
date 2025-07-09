@@ -4,24 +4,39 @@ sidebar_position: 3
 
 # Configuring Online Subsystem
 
-:::info Video Tutorial is available
-[Video Tutorial](../videos/installing-and-configuring.mdx)
+## Overview
+
+This guide provides instructions for configuring the EOS Online Subsystem in your project. Proper configuration is essential for establishing network connectivity and multiplayer functionality.
+
+## Prerequisites
+
+:::warning Important
+Before proceeding, verify that your `DefaultEngine.ini` file does not contain any duplicate entries for the configurations listed below. Duplicate entries will cause configuration conflicts and prevent proper functionality.
 :::
 
-:::tip NOTE
-Make sure you don’t already have any of the below defintions already defined in your DefaultEngine.ini, duplicate entries will break the configuration
-:::
+## Video Tutorial
 
-Edit your DefaultEngine.ini file located in **Project\Config\DefaultEngine.ini** and add the following configuration, remember to change out the DefaultPlatformService to EOS (if previously using Steam or any other Service)
+For a visual walkthrough of this process, please refer to our [Video Tutorial](../videos/installing-and-configuring.mdx).
 
-## DefaultEngine.ini
-Edit your **DefaultEngine.ini** configuration file located in the Project\Config directory. The example below is all you need for a basic SteamSockets setup.
-```c
+## Configuration Steps
+
+### 1. Locate Configuration File
+
+Navigate to your project's configuration directory and open the `DefaultEngine.ini` file located at:
+```
+Project\Config\DefaultEngine.ini
+```
+
+### 2. Basic Configuration
+
+Add the following configuration to your `DefaultEngine.ini` file. Ensure that you update the `DefaultPlatformService` to use `EOSCore` instead of any previously configured service (such as Steam).
+
+```ini
 [OnlineSubsystem]
 DefaultPlatformService=EOSCore
 
 [/Script/OnlineSubsystemEOSCore.NetDriverEOSCore]
-NetConnectionClassName="OnlineSubsystemEOSCore.NetConnectionEOSCore"
+NetConnectionClassName="/Script/OnlineSubsystemEOSCore.NetConnectionEOSCore"
 bIsUsingP2PSockets=true
 
 [/Script/Engine.GameEngine]
@@ -29,14 +44,23 @@ bIsUsingP2PSockets=true
 +NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
 ```
 
-## Optimizing (Optional)
-There are a few settings that you can set on the **NetDriverEOSCore** to fine-tune your connection settings, see the engine documentation for explanation on the different settings.
-- *These settings will limit at what rates client and server talk to each other, because of very high framerates (FPS) sometimes the client will hammer the server with data, too much data that it will eventually get dropped.*
-- *The settings above will limit the send rate to “60 FPS” rather than spamming the server at the games FPS (100-200++ frames per second)*
+This configuration establishes the foundation for SteamSockets functionality within the EOS framework.
 
-```c
+## Performance Optimization (Optional)
+
+### Network Rate Limiting
+
+To optimize network performance, you may configure additional settings for the `NetDriverEOSCore`. These settings help manage data transmission rates between clients and servers, preventing network congestion that can occur with high frame rate applications.
+
+#### Benefits
+- Prevents clients from overwhelming servers with excessive data packets
+- Establishes consistent communication rates regardless of application frame rate
+- Reduces packet loss due to network saturation
+
+#### Configuration
+```ini
 [/Script/OnlineSubsystemEOSCore.NetDriverEOSCore]
-NetConnectionClassName="OnlineSubsystemEOSCore.NetConnectionEOSCore"
+NetConnectionClassName="/Script/OnlineSubsystemEOSCore.NetConnectionEOSCore"
 MaxNetTickRate=60
 NetServerMaxTickRate=60
 LanServerMaxTickRate=60
@@ -45,3 +69,17 @@ bClampListenServerTickRates=true
 MaxClientRate=100000
 MaxInternetClientRate=100000
 ```
+
+### Parameter Explanation
+
+- **MaxNetTickRate**: Maximum network update frequency (60 Hz recommended)
+- **NetServerMaxTickRate**: Server-side maximum tick rate
+- **LanServerMaxTickRate**: LAN-specific maximum tick rate
+- **NetClientTicksPerSecond**: Client-side network update frequency
+- **bClampListenServerTickRates**: Enables rate limiting for listen servers
+- **MaxClientRate**: Maximum data rate for client connections (bytes per second)
+- **MaxInternetClientRate**: Maximum data rate for internet-based connections
+
+## Additional Resources
+
+For detailed explanations of individual network settings and advanced configuration options, please consult the official engine documentation.
