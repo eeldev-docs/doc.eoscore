@@ -34,6 +34,9 @@ DefaultPlatformService=EOSCore
 MaxClientRate=1000000000 
 MaxInternetClientRate=1000000000
 InitialConnectTimeout=120.0
+
+[EOSSDK]
+bHasProjectBinary=true
 ```
 
 ### Launching the Server
