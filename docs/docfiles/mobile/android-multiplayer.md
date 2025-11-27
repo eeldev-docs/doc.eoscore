@@ -17,10 +17,10 @@ sidebar_position: 2
 DefaultPlatformService=EOSCore
 
 [/Script/OnlineSubsystemEOSCore.NetDriverEOSCore]
-NetConnectionClassName=OnlineSubsystemEOSCore.NetConnectionEOSCore
+NetConnectionClassName=/Script/OnlineSubsystemEOSCore.NetConnectionEOSCore
 bIsUsingP2PSockets=true
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 ```
