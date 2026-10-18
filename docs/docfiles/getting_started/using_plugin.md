@@ -27,7 +27,7 @@ It's recommended that you check out the Epic Online Services documentation when 
 :::
 - **[You can find the EOS documentation here](https://dev.epicgames.com/docs/services/en-US/index.html)**
 
-For example, to find out how to setup and use leaderboards you can find the [Leaderbord documentation here](https://dev.epicgames.com/docs/services/en-US/GameServices/Leaderboards/index.html)
+For example, to find out how to setup and use leaderboards you can find the [Leaderboard documentation here](https://dev.epicgames.com/docs/services/en-US/GameServices/Leaderboards/index.html)
 
 ## Using the documentation
 - All of the nodes in the plugin are named the same as in the official EOS documentation (this screenshot is taken from the EOS leaderboard documentation website) **[(found here)](https://dev.epicgames.com/docs/services/en-US/GameServices/Leaderboards/index.html)**

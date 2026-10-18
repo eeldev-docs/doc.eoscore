@@ -41,13 +41,15 @@ bIsUsingP2PSockets=true
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 
 [EOSSDK]
 bHasProjectBinary=true
 ```
 
-This configuration establishes the foundation for SteamSockets functionality within the EOS framework.
+This configuration makes EOSCore the default Online Subsystem and routes game traffic through EOS P2P (NAT traversal and relay servers) using the EOSCore NetDriver. The `[EOSSDK] bHasProjectBinary=true` entry makes the engine's own EOS modules use the EOS SDK binary that ships with EOSCore, so the two never load different SDK versions.
+
+Your EOS credentials (ProductId, SandboxId, DeploymentId, ClientId, ClientSecret, EncryptionKey) are set in **Project Settings > Plugins > EOSCore Plugin**, see [Project Settings Reference](../settings_reference.md).
 
 ## Performance Optimization (Optional)
 

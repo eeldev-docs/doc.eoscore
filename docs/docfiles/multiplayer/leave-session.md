@@ -32,7 +32,7 @@ The `DestroySession` node can be called from **anywhere** in your game:
 
 It does **not** matter where — only that it **is called**.
 
-> **Important**: `DestroySession` is **client-side only**. It does **not** affect the host or other players.
+> **Important**: What `DestroySession` does depends on who calls it. On a **client** it only removes the session locally, the host and the other players are not affected. On the **host** (the session owner) it removes the session from EOS, so it no longer shows up in searches. See [Host Leaving](#notes) below.
 
 ---
 
@@ -73,7 +73,7 @@ Open Level → "MainMenu"
    - Show "Leaving session..." while `DestroySession` completes.
 
 4. **Error Handling**:
-   - Even if `DestroySession` fails, proceed to menu — the session will expire eventually.
+   - Even if `DestroySession` fails, proceed to the menu, but log the error. The local session stays registered until it is destroyed or the game restarts, so call `DestroySession` again before creating or joining a new session.
 
 ---
 
@@ -89,7 +89,7 @@ Open Level → "MainMenu"
 
 ## Notes
 
-- **Host Leaving**: The host should **not** call `DestroySession` unless ending the entire game. Use `EndSession` or server shutdown logic instead.
+- **Host Leaving**: The rule above applies to players leaving. The host calls `DestroySession` only when the whole game ends, because it removes the session for everyone. To stop the match but keep the session, use `EndSession` instead.
 - **Testing**: Use **Standalone Game** instances to verify cleanup in logs.
 
 ---

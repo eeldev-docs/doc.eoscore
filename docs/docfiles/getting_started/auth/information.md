@@ -12,7 +12,7 @@ The EOS SDK requires you to always login before calling **ANY EOS** functionalit
 - There are essentially **two methods** for authenticating with the EOSCore plugin, one is via the **Login** node that handles a lot of logic in the background (such as creating new users, etc) and the other method is by using the Async nodes.
 
 ### Which Login Method should I use? Login Node or Async Nodes?
-- Use the **Login node** if you can (see the liste of supported authentication methods to the left)
+- Use the **Login node** if you can (see the list of supported authentication methods to the left)
 
 ### Epic Account? DeviceId? What should I use?
 - Use the **DeviceId** authentication method to begin with, it's simple and does not require any user registration or logging in and it supports most online features.

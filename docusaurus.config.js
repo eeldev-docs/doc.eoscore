@@ -52,7 +52,7 @@ const config = {
       navbar: {
         title: 'Documentation',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'eelDev',
           src: 'img/eeldev_icon.png',
         },
         items: [ 
@@ -66,7 +66,7 @@ const config = {
           },
           */
           { href: 'https://eeldev.com', label: 'eeldev.com' },
-          { href: 'https://www.unrealengine.com/marketplace/slug/af157f773f084ca89036cd7bc03fb416', label: 'Unreal Marketplace' },
+          { href: 'https://www.fab.com/listings/8e78818d-4662-4c6d-8ab2-6e22b9d3595e', label: 'Fab' },
           { href: 'https://www.youtube.com/channel/UC6Rhr_F5BxwfTtcADVPUNYA', label: 'YouTube', position: 'right' },
           { href: 'https://discord.gg/3Yu7pEy', label: 'Discord', position: 'right'},
           { href: 'https://twitter.com/dryeeldev', label: 'Twitter', position: 'right' },

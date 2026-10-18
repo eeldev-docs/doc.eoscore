@@ -5,7 +5,7 @@
 ## Logging in
 
 ### Standalone Game
-- The SDK now uses the EOS Overlay to initiate authentication rather then opening the web browser, the overlay is only initialized in a Standalone Game when running in the editor.
+- The SDK now uses the EOS Overlay to initiate authentication rather than opening the web browser, the overlay is only initialized in a Standalone Game when running in the editor.
 
 ![Image](../../../../static/img/standalone.png)
 

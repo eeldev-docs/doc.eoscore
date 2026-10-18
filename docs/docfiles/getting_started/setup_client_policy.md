@@ -27,7 +27,7 @@ Scroll down to the bottom of the page and click on “**ADD NEW CLIENT POLICY**�
 ![Image](../../../static/img/2_policy_settings.png)
 
 ### Policy Permissions
-- **CLICK ON EVERY FEATURE IN THE LIST (ACHIVEMENTS IN THIS EXAMPLE) AND MAKE SURE “ALL ACTIONS” ARE ALLOWED**
+- **CLICK ON EVERY FEATURE IN THE LIST (ACHIEVEMENTS IN THIS EXAMPLE) AND MAKE SURE “ALL ACTIONS” ARE ALLOWED**
 
 ![Image](../../../static/img/3_policy_settings.png)
 
@@ -70,7 +70,7 @@ This step is optional but required if you want to use Epic Account Authenticatio
 :::
 
 ### Configuring
-- Click on “Epic Account Servces“
+- Click on “Epic Account Services“
 - Click on “CONFIGURE” to configure your Application 
 ![Image](../../../static/img/8_configure_eas.png)
 
@@ -86,14 +86,14 @@ This step is optional but required if you want to use Epic Account Authenticatio
 ![Image](../../../static/img/permissions.jpg)
 
 ### Clients
-- Nativate to the “**CLIENTS**” tab and select your EOS client that you just created in the previous step and click on “**SAVE**“
+- Navigate to the “**CLIENTS**” tab and select your EOS client that you just created in the previous step and click on “**SAVE**“
 
 ![Image](../../../static/img/9_eas.png)
 
 
 ## Scope Consent
 - EOSCore 1.9.3.3 and going forward allows you to customize the scope required when authenticating Epic Accounts, you'll have to make sure that the requested permissions match the client permissions in your developer portal.
-- Project Settings configured Scopes are used by the "**[Login](https://eoscore.eeldev.com/docfiles/getting_started/auth/information/)**" node
+- Project Settings configured Scopes are used by the "**[Login](./auth/information.md)**" node
 - Make sure that the settings in Project Settings **match** the permissions in your Developer Portal
 
 ![Image](../../../static/img/scope_1.png)
@@ -102,6 +102,6 @@ This step is optional but required if you want to use Epic Account Authenticatio
 
 ![Image](../../../static/img/scope_2.png)
 
-- If you are using the [async nodes](https://eoscore.eeldev.com/docfiles/getting_started/auth/information/) to authenticate you can specify the scopes directly in the node.
+- If you are using the [async nodes](./auth/information.md) to authenticate you can specify the scopes directly in the node.
 
 ![Image](../../../static/img/scope_3.png)

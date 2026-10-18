@@ -12,7 +12,7 @@
 
 ![Image](../../../../static/img/2-1.png)
 
-- Configure the Steam Identity Provider and add a New Entry, the Encryption key needed is found in the next secion of this tutorial
+- Configure the Steam Identity Provider and add a New Entry, the Encryption key needed is found in the next section of this tutorial
 
 ## Steam Appticket Key
 - Login to your Steamworks account and select your Game/Application, under **Technical Tools** click on **Edit Steamworks Settings**.

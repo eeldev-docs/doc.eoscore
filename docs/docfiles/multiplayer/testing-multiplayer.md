@@ -7,7 +7,7 @@ This Example has a Video Tutorial that you can find here: [Related Video](../vid
 ## Requirements
 - You must use 2 different accounts (for example 1 DeviceId and 1 Epic Account) when testing multiplayer
 - DeviceId can’t be used when testing multiplayer on the same machine, you can however use 1 Epic Account and 1 DeviceId Account
-- **It's recommended that you package your game project rather then using the editor.**
+- **It's recommended that you package your game project rather than using the editor.**
 - If you're testing in the editor you must use a Standalone Instance (see below)
 
 ## Download DevTool

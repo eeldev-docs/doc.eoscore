@@ -19,14 +19,16 @@ For a visual walkthrough of the installation process, please refer to our [Video
 Before installing the EOSCore plugin, you must disable the default EOS plugins that are included with the Unreal Engine. These built-in plugins will conflict with the EOSCore plugin and cause functionality issues.
 
 **Required Actions:**
-1. Navigate to your engine's plugin directory
-2. Locate the default EOS plugins
-3. Disable all engine-provided EOS plugins as shown below
+1. Open your project and go to **Edit > Plugins**
+2. Search for **EOS**
+3. Disable the engine-provided EOS plugins (Online Subsystem EOS, EOS Shared, EOS Voice Chat, Socket Subsystem EOS) as shown below, then restart the editor
 
 ![Disabled EOS Plugins](../../../static/img/disabled_eos.jpg)
 
 :::warning Critical Step
 Failure to disable the engine's default EOS plugins will result in plugin conflicts and prevent proper functionality.
+
+Some engine plugins depend on EOS Shared and enable it again. If you have to keep EOS Shared enabled, add `[EOSSDK] bHasProjectBinary=true` to your DefaultEngine.ini (see [Configuring Online Subsystem](./configuring_subsystem.md)) so the engine uses the EOS SDK binary that ships with EOSCore. The editor log warns about this when one of these plugins is enabled.
 :::
 
 ## Installation Process
@@ -34,9 +36,13 @@ Failure to disable the engine's default EOS plugins will result in plugin confli
 ### Step 1: Locate the Plugin
 
 1. Open the Epic Games Launcher
-2. Navigate to the Unreal Engine marketplace or plugin library
+2. Go to **Fab Library** (the plugin is sold on [Fab](https://www.fab.com/listings/8e78818d-4662-4c6d-8ab2-6e22b9d3595e))
 3. Search for the **EOSCore** plugin
 4. Click **Install to Engine** to begin the installation process
+
+:::tip Gumroad
+If you bought the plugin on [Gumroad](https://eeldev.gumroad.com/l/eoscore), unzip it into your project's `Plugins` folder instead, so you get `YourProject/Plugins/EOSCore/EOSCore.uplugin`.
+:::
 
 ![EOSCore Plugin Installation](../../../static/img/installing_1.png)
 

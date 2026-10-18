@@ -5,7 +5,7 @@ This Example has a Video Tutorial that you can find here: [Related Video](../vid
 :::
 
 ## Hosting the Server
-You must host your dedicated game server on a remote machine/pc for everything to work correctly, firewalls and routers also has to be configured to allow ports 7777 for clients to connect successfully.
+You must host your dedicated game server on a remote machine/pc for everything to work correctly, firewalls and routers also has to be configured to allow UDP port 7777 (the default game port, or the port you pass with -Port=) for clients to connect successfully.
 
 If you are hosting the server on the same PC you’re connecting from it will not work as expected because of how network routing works, please use a correct server setup as described above.
 
@@ -28,7 +28,7 @@ DefaultPlatformService=EOSCore
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="OnlineSubsystemUtils.IpNetDriver",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemUtils.IpNetDriver",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 
 [/Script/OnlineSubsystemUtils.IpNetDriver]
 MaxClientRate=1000000000 
@@ -40,11 +40,17 @@ bHasProjectBinary=true
 ```
 
 ### Launching the Server
-We’ll use Commandline arguments to authenticate and launch our server, the example below will authenticate our server using a local DeviceID, this is the minimum authentication required to communicate with Epic Online Services. The –EOSConfig= is optional, for example if you’re using a different configuration for your Server.
+We’ll use Commandline arguments to launch our server. `-EOSConfig=` is optional, use it if you have a separate configuration for your server in Project Settings (for example one that uses a server client policy). `-Port=` sets the game port, the plugin publishes it in the session so clients connect to the right port.
 
 ```
-D:\WindowsServer\EOS_DedicatedServer.exe -server -log -AUTH_TYPE=deviceid -AUTH_LOGIN=test -AUTH_TOKEN=test -EOSConfig=ServerConfig
+D:\WindowsServer\EOS_DedicatedServer.exe -log -Port=7777 -EOSConfig=ServerConfig
 ```
+
+:::note
+Automatic login with `-AUTH_TYPE=` only runs in Game and Client builds. In a build of a **Server** target it is ignored, so the server does not log in a user this way. If you run the server from a Game or Editor binary with `-server`, `-AUTH_TYPE=deviceid -AUTH_LOGIN=<display name>` logs the server in with a DeviceId.
+:::
+
+See [Commandline Arguments](../commandline_arguments.md) for all arguments.
 
 ## Listing the Server
 You can use the default Session nodes to list a Dedicated Server. We’ll use the GameInstance in this example.

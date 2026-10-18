@@ -3,7 +3,7 @@
 - **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-account-services/auth/auth-interface#epic-games-launcher)**
 
 :::tip
-This authentication method reuires EOSCore version 1.9.4.1 and above
+This authentication method requires EOSCore version 1.9.4.1 and above
 :::
 
 ## Epic Launcher Authentication
@@ -13,7 +13,7 @@ AuthType: Exchange Code
 CredentialsType: Epic
 
 Login Id: not used
-Password: Value from "Find ExchanceCode Password"
+Password: Value from "Find Exchange Code Password"
 Additional Data: not used
 ```
 

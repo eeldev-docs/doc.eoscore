@@ -4,7 +4,7 @@ sidebar_position: 2
 # Refreshing Tokens
 
 ## Refresh Login Tokens
-Epic Online Services autentication has to be refreshed every XX minutes (depending on which authentication method was used) to keep the logged in session active.
+Epic Online Services authentication has to be refreshed every XX minutes (depending on which authentication method was used) to keep the logged in session active.
 - [You can read more about this here](https://dev.epicgames.com/docs/game-services/eos-connect-interface#user-authentication-refresh-notification)
 
 ## Login Node

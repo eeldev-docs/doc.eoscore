@@ -3,7 +3,7 @@
 - [You can read more about this here](https://dev.epicgames.com/docs/services/en-US/EpicAccountServices/Crossplayacrossplatforms/RedistributableInstaller/index.html)
 
 ### Downloading the EOS SDK
-- **[See this documentation on how/where to download the SDK](./bootstrap_game.md)**
+- **[See this documentation on how/where to download the SDK](./downloading_sdk.md)**
 
 ### Locate the Bootstrapper
 - The Bootstrapper comes with the EOS SDK, see the link above where to obtain the EOS SDK

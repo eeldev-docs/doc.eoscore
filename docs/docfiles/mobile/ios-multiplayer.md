@@ -3,10 +3,9 @@ sidebar_position: 5
 ---
 
 # IOS Multiplayer
-- To enable **Multiplayer** on a IOS device you must edit the **IOSEngine.ini** configuration file, this is the IOS equivilent to *DefaultEngine.ini*, copy-paste the settings from the *DefaultEngine.ini* to your **IOSEngine.ini** (*see the example below*).
+- To enable **Multiplayer** on an iOS device you must edit the **IOSEngine.ini** configuration file, this is the IOS equivalent to *DefaultEngine.ini*, copy-paste the settings from the *DefaultEngine.ini* to your **IOSEngine.ini** (*see the example below*).
 - This example will allow you to connect using the EOS NAT P2P Interface and enable cross-platform multiplayer.
 
-This example will allow you to connect using the EOS NAT P2P Interface and enable cross-platform multiplayer.
 
 ### Project\Config\IOS\IOSEngine.ini
 :::danger NOTE
@@ -18,10 +17,10 @@ This example will allow you to connect using the EOS NAT P2P Interface and enabl
 DefaultPlatformService=EOSCore
 
 [/Script/OnlineSubsystemEOSCore.NetDriverEOSCore]
-NetConnectionClassName=OnlineSubsystemEOSCore.NetConnectionEOSCore
+NetConnectionClassName=/Script/OnlineSubsystemEOSCore.NetConnectionEOSCore
 bIsUsingP2PSockets=true
 
 [/Script/Engine.GameEngine]
 !NetDriverDefinitions=ClearArray
-+NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="OnlineSubsystemUtils.IpNetDriver")
++NetDriverDefinitions=(DefName="GameNetDriver",DriverClassName="/Script/OnlineSubsystemEOSCore.NetDriverEOSCore",DriverClassNameFallback="/Script/OnlineSubsystemUtils.IpNetDriver")
 ```
