@@ -36,12 +36,15 @@ These are the `IOnlineSubsystem` interfaces the EOSCore Online Subsystem impleme
 | Interface | Implemented | Notes |
 |---|---|---|
 | Identity | Yes | Login, logout, automatic login with [-AUTH_TYPE](./commandline_arguments.md) |
-| Session | Yes | EOS Sessions, plus LAN sessions |
+| Session | Yes | EOS Sessions, plus LAN sessions. **Join** in the EOS overlay and accepted invites call `OnSessionUserInviteAccepted` |
 | Stats | Yes | |
 | Leaderboards | Yes | |
 | Achievements | Yes | |
 | Voice | Yes | See [Voice Chat (OSS)](./multiplayer/voice-chat/voice-chat_oss.md) |
 | Store V2 / Purchase | Only when started from the Epic Games Launcher (`-EpicPortal`) | |
-| Friends, Presence, User, External UI | No | Use the EOSCore Friends, Presence, UserInfo and UI functions |
+| Friends | Yes | Friends list, friend invites, blocked players. Needs an Epic Account login |
+| Presence | Yes | Set and query presence, presence change notifications. Needs an Epic Account login |
+| User | Yes | User info (display names) and external account id mappings |
+| External UI | Partly | `ShowLoginUI` (Account Portal), `ShowFriendsUI` (EOS overlay) and `ShowWebURL`. The other Show functions are not implemented |
 | User Cloud, Shared Cloud, Title File, Entitlements | No | Use Player Data Storage, Title Storage and Ecom functions |
 | Party, Groups, Chat, Messages, Events, Sharing, Time, Tournaments, Turn Based | No | |

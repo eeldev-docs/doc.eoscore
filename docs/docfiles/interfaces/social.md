@@ -11,7 +11,7 @@ These interfaces use **Epic Account Services** and need an Epic Account login (A
 - [EOS User Info documentation](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/eos-user-info-interface)
 
 :::note
-The `EOSCore` Online Subsystem does not implement `IOnlineFriends`, `IOnlinePresence`, `IOnlineUser` or `IOnlineExternalUI`. Use the EOSCore nodes below instead of the engine's Friends and Presence nodes.
+The `EOSCore` Online Subsystem also implements `IOnlineFriends`, `IOnlinePresence`, `IOnlineUser` and parts of `IOnlineExternalUI` (login, friends overlay, web URL), so C++ code and plugins that use the Online Subsystem can use them as well. In Blueprints, use the EOSCore nodes below. See [Supported Platforms and Features](../supported_platforms.md#online-subsystem-interfaces).
 :::
 
 ## Friends
