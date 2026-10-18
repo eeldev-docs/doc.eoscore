@@ -7,7 +7,7 @@ Epic Games Services uses the OAuth 2.0 protocol for authentication and authoriza
 
 Before starting, you will need to obtain OAuth 2.0 client credentials from Epic. These will be in the form of a Client ID and Client Secret, and will be used when requesting an access token from the Epic authorization server. See our guide on Getting Started with Epic Account Services for more details.
 
-https://dev.epicgames.com/docs/services/en-US/WebAPIRef/AuthWebAPI/index.html
+https://dev.epicgames.com/docs/web-api-ref/authentication
 
 https://dev.epicgames.com/portal
 

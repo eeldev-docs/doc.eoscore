@@ -1,6 +1,6 @@
 # Bootstrapping Game
 - The EOS Bootstrapper is an executable that is used as a transient launcher application to run the actual game client executable. It is intended to be used as the target executable to run when users launch the game.
-- [You can read more about this here](https://dev.epicgames.com/docs/services/en-US/EpicAccountServices/Crossplayacrossplatforms/RedistributableInstaller/index.html)
+- [You can read more about this here](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/crossplay/redistributable-installer)
 
 ### Downloading the EOS SDK
 - **[See this documentation on how/where to download the SDK](./downloading_sdk.md)**

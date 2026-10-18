@@ -45,12 +45,18 @@ These keys are not shown in Project Settings. Add them to the same section in De
 bEnabled=true
 ; Folder the EOS SDK uses for its cache (ignored on Android)
 OverrideCacheDir=D:/MyGameCache
+; Log level of the EOS SDK's own messages (non-Shipping builds only)
+SDKLogLevel=Warning
+; Seconds EOS retries network tasks before they fail
+TaskNetworkTimeoutSeconds=10
 ```
 
 | ini key | Default | Description |
 |---|---|---|
 | `bEnabled` | `true` | Enables the EOSCore Online Subsystem. The older sections `[/Script/EOSCore.EOSCoreSettings]` and `[EOSCore]` are still read if this key is missing |
 | `OverrideCacheDir` | User folder `/CacheDir` | Cache folder for the EOS SDK. Android always uses the app's internal files folder |
+| `SDKLogLevel` | `VeryVerbose` | `Off`, `Fatal`, `Error`, `Warning`, `Info`, `Verbose` or `VeryVerbose`. Lower it if the EOS SDK messages flood your log. Not used in Shipping builds, where SDK logging is off |
+| `TaskNetworkTimeoutSeconds` | `10` | How long EOS retries a network task (for example a login while offline) before the callback fails |
 
 ## Related Settings in Other Sections
 

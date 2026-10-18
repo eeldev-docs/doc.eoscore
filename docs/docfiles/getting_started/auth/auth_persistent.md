@@ -1,5 +1,5 @@
 # Authentication: Persistent Auth
-- **[Read more about this authentication method here](https://dev.epicgames.com/docs/services/en-US/EpicAccountServices/AuthInterface/index.html#persistinguserlogintoepicaccountoutsideepicgameslauncher)**
+- **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/eos-epic-account-services/auth-interface)**
 
 ## Persistent Authentication (Use previous successful login)
 - Use the following settings

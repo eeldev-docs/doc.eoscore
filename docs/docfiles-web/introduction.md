@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 ## The EOSCore Web Plugin
 The EOSCore::Web plugin allows you to communicate with the EOS Web API using Blueprints, the WEB Api can be used to create Room Tokens for your Voice Chat channels, submit In game Player Tickets and more..
 
-https://dev.epicgames.com/docs/services/en-US/WebAPIRef/index.html
+https://dev.epicgames.com/docs/web-api-ref
 
 <Tabs>
   <TabItem value="image" label="Image" default>

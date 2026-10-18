@@ -1,5 +1,5 @@
 # Authentication: Epic Account
-- **[Read more about this authentication method here](https://dev.epicgames.com/docs/services/en-US/EpicAccountServices/AuthInterface/index.html)**
+- **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/eos-epic-account-services/auth-interface)**
 
 
 ## Logging in

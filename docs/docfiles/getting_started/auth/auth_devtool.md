@@ -1,5 +1,5 @@
 # Authentication: DevTool
-- **[Read more about this authentication method here](https://dev.epicgames.com/docs/services/en-US/EpicAccountServices/DeveloperAuthenticationTool/index.html)**
+- **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/eos-epic-account-services/developer-authentication-tool)**
 
 ## DevTool
 - Use the following settings

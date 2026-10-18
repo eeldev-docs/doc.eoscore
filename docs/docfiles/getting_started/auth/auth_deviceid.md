@@ -1,5 +1,5 @@
 # Authentication: DeviceId
-- **[Read more about this authentication method here](https://dev.epicgames.com/docs/services/en-US/GameServices/Connect/index.html#usingdeviceid)**
+- **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-online-services/eos-fundamentals/connect-interface)**
 
 :::tip
 This feature is relevant for Mobile personal devices and PC Desktop only. Device ID cannot be used with the Anti-Cheat Interfaces, which require an external account.

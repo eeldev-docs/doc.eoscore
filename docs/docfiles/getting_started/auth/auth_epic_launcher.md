@@ -1,6 +1,6 @@
 # Authentication: Epic Launcher
 
-- **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-account-services/auth/auth-interface#epic-games-launcher)**
+- **[Read more about this authentication method here](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/eos-epic-account-services/auth-interface)**
 
 :::tip
 This authentication method requires EOSCore version 1.9.4.1 and above

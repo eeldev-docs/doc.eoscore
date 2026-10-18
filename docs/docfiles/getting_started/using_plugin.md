@@ -25,12 +25,12 @@ After installing the plugin and enabling it for your project you can start using
 :::tip Documentation
 It's recommended that you check out the Epic Online Services documentation when trying to figure out how to use the plugin
 :::
-- **[You can find the EOS documentation here](https://dev.epicgames.com/docs/services/en-US/index.html)**
+- **[You can find the EOS documentation here](https://dev.epicgames.com/docs)**
 
-For example, to find out how to setup and use leaderboards you can find the [Leaderboard documentation here](https://dev.epicgames.com/docs/services/en-US/GameServices/Leaderboards/index.html)
+For example, to find out how to setup and use leaderboards you can find the [Leaderboard documentation here](https://dev.epicgames.com/docs/epic-online-services/player-and-game-data/leaderboards-interface)
 
 ## Using the documentation
-- All of the nodes in the plugin are named the same as in the official EOS documentation (this screenshot is taken from the EOS leaderboard documentation website) **[(found here)](https://dev.epicgames.com/docs/services/en-US/GameServices/Leaderboards/index.html)**
+- All of the nodes in the plugin are named the same as in the official EOS documentation (this screenshot is taken from the EOS leaderboard documentation website) **[(found here)](https://dev.epicgames.com/docs/epic-online-services/player-and-game-data/leaderboards-interface)**
 
 ![Image](../../../static/img/using_4.png)
 

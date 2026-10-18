@@ -22,12 +22,12 @@ The EOS SDK requires you to always login before calling **ANY EOS** functionalit
 
 ## Async Nodes
 ### Logging in with an Epic Account 
-- [More Information about the Auth Interface](https://dev.epicgames.com/docs/epic-account-services/auth-interface)
+- [More Information about the Auth Interface](https://dev.epicgames.com/docs/epic-online-services/accounts-and-social/eos-epic-account-services/auth-interface)
 
 ![Img](../../../../static/img/1_auth_epic.png)
 
 ### Logging in with a DeviceId Account
-- [More Information about the Connect Interface](https://dev.epicgames.com/docs/game-services/eos-connect-interface)
+- [More Information about the Connect Interface](https://dev.epicgames.com/docs/epic-online-services/eos-fundamentals/connect-interface)
 
 ![Img](../../../../static/img/2_auth.png)
 

@@ -15,6 +15,19 @@ const config = {
   organizationName: 'eeldev-docs', // Usually your GitHub org/user name.
   projectName: 'doc.eoscore', // Usually your repo name.
   plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        hashed: true,
+        // Docs are served from the site root
+        docsRouteBasePath: '/',
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+      }),
+    ],
+  ],
   deploymentBranch: 'deployment',
   trailingSlash: false,
 
