@@ -30,6 +30,12 @@ const config = {
   ],
   deploymentBranch: 'deployment',
   trailingSlash: false,
+  customFields: {
+    productName: 'EOSCore',
+  },
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap',
+  ],
 
   presets: [
     [
@@ -58,85 +64,43 @@ const config = {
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
           background: {
             light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)'
+            dark: 'rgb(17, 18, 20)'
           }
         }
       },
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: 'Documentation',
-        logo: {
-          alt: 'eelDev',
-          src: 'img/eeldev_icon.png',
-        },
-        items: [ 
-          //{to: '/blog', label: 'Changelogs', position: 'left'},
-          /*
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          */
-          { href: 'https://eeldev.com', label: 'eeldev.com' },
-          { href: 'https://www.fab.com/listings/8e78818d-4662-4c6d-8ab2-6e22b9d3595e', label: 'Fab' },
-          { href: 'https://www.youtube.com/channel/UC6Rhr_F5BxwfTtcADVPUNYA', label: 'YouTube', position: 'right' },
-          { href: 'https://discord.gg/3Yu7pEy', label: 'Discord', position: 'right'},
-          { href: 'https://twitter.com/dryeeldev', label: 'Twitter', position: 'right' },
+        items: [
+          { href: 'https://eeldev.com', label: 'Website', position: 'right' },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          /** 
           {
-            title: 'Docs',
+            title: 'eelDev',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              { label: 'Website', href: 'https://eeldev.com' },
+              { label: 'EOSCore on Fab', href: 'https://www.fab.com/listings/8e78818d-4662-4c6d-8ab2-6e22b9d3595e' },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'YouTube',
-                href: 'https://www.youtube.com/channel/UC6Rhr_F5BxwfTtcADVPUNYA',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/3Yu7pEy',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/dryeeldev',
-              },
+              { label: 'Discord', href: 'https://discord.gg/3Yu7pEy' },
+              { label: 'YouTube', href: 'https://www.youtube.com/channel/UC6Rhr_F5BxwfTtcADVPUNYA' },
+              { label: 'Twitter', href: 'https://twitter.com/dryeeldev' },
             ],
           },
-          */
-          /*
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-          */
         ],
         copyright: `Copyright © ${new Date().getFullYear()} eelDev AB`,
       },
       prism: {
         theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
+        darkTheme: prismThemes.vsDark,
       },
     }
     ),

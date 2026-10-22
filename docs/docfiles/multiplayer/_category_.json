@@ -1,4 +1,6 @@
 {
   "label": "Multiplayer",
-  "position": 2
+  "position": 2,
+  "collapsible": false,
+  "collapsed": false
 }
