@@ -29,5 +29,18 @@ A leaderboard ranks players by one [Stat](./stats.md). Create it in the Develope
 2. Call **QueryLeaderboardRanks** with the leaderboard id.
 3. Loop over **GetLeaderboardRecordCount** and **CopyLeaderboardRecordByIndex** to fill your UI.
 
+## Example
+![Query leaderboard ranks](../../../static/img/interfaces_leaderboards_ranks.webp)
+
+The **QueryLeaderboard** event downloads the top ranks of the `HIGHSCORE` leaderboard and prints them as `1. PlayerName - 1500`:
+
+1. **EOS_Leaderboards_QueryLeaderboardRanks** downloads the ranks. **Leaderboard Id** is the id from the Developer Portal.
+2. When the query succeeds, **EOS_Leaderboards_GetLeaderboardRecordCount** returns the number of downloaded records.
+3. The **For Loop** reads each record with **EOS_Leaderboards_CopyLeaderboardRecordByIndex**. A record has the **Rank**, **Score**, **User Id** and **User Display Name** of a player.
+
+:::tip
+A leaderboard only changes when its stat is ingested, see [Stats](./stats.md). The new score can take a short while to show up in the ranks.
+:::
+
 ## Online Subsystem
 The `EOSCore` Online Subsystem also implements `IOnlineLeaderboards`, so the engine's **Read Leaderboard Integer** and **Write Leaderboard Integer** nodes work as well.

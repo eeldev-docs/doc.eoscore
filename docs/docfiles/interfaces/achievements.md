@@ -37,5 +37,26 @@ Achievements are defined in the Developer Portal (**Game Services > Achievements
 Stat based achievements are not unlocked right away. EOS processes ingested stats on the backend, the unlock can take a few seconds.
 :::
 
+## Example
+
+### Unlocking an achievement
+![Unlock an achievement](../../../static/img/interfaces_achievements_unlock.webp)
+
+The **UnlockAchievement** event unlocks `ACH_FIRST_WIN` for the local player. **Achievement Ids** is an array, so you can unlock several achievements in one call.
+
+### Getting notified about unlocks
+![Achievement unlocked notification](../../../static/img/interfaces_achievements_notify.webp)
+
+Call **BindAchievementNotifications** once after login, for example from the Game Instance. **EOS_Achievements_AddNotifyAchievementsUnlockedV2** then calls **OnAchievementUnlocked** for every unlock, both for achievements you unlock yourself and for stat based achievements that EOS unlocks on the backend. Keep the returned **Notification Id** if you want to remove the notification later with **EOS_Achievements_RemoveNotifyAchievementsUnlocked**.
+
+### Reading player progress
+![Query player achievements](../../../static/img/interfaces_achievements_query.webp)
+
+The **QueryPlayerAchievements** event downloads the achievements of the local player and prints the id and progress of each one:
+
+1. **EOS_Achievements_QueryPlayerAchievements** downloads the progress. Use the same id for **Local User Id** and **Target User Id** to read your own achievements.
+2. **EOS_Achievements_GetPlayerAchievementCount** returns the number of achievements.
+3. The **For Loop** reads each one with **EOS_Achievements_CopyPlayerAchievementByIndex**. **Progress** goes from 0 to 1, and **Unlock Time** is set when the achievement is unlocked.
+
 ## Online Subsystem
 The `EOSCore` Online Subsystem also implements `IOnlineAchievements`, so the engine's **Write Achievement Progress** and **Cache Achievements** nodes work as well.

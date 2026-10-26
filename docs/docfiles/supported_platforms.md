@@ -4,7 +4,7 @@
 
 | | Version |
 |---|---|
-| EOSCore | 1.9.8.8 |
+| EOSCore | 1.9.8.9 |
 | EOS SDK (included) | 1.19.2 (hotfix 1) |
 
 For the engine versions of the current release, see the [Fab listing](https://www.fab.com/listings/8e78818d-4662-4c6d-8ab2-6e22b9d3595e). Older engine versions are available on [Gumroad](https://eeldev.gumroad.com/l/eoscore).
@@ -36,7 +36,7 @@ These are the `IOnlineSubsystem` interfaces the EOSCore Online Subsystem impleme
 | Interface | Implemented | Notes |
 |---|---|---|
 | Identity | Yes | Login, logout, automatic login with [-AUTH_TYPE](./commandline_arguments.md) |
-| Session | Yes | EOS Sessions, plus LAN sessions. **Join** in the EOS overlay and accepted invites call `OnSessionUserInviteAccepted` |
+| Session | Yes | EOS Sessions, EOS Lobbies (`bUseLobbiesIfAvailable`, see [Lobby Sessions](./multiplayer/lobby-sessions.md)) and LAN sessions. **Join** in the EOS overlay and accepted invites call `OnSessionUserInviteAccepted` |
 | Stats | Yes | |
 | Leaderboards | Yes | |
 | Achievements | Yes | |
