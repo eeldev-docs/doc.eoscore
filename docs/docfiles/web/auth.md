@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Auth
@@ -12,7 +12,7 @@ https://dev.epicgames.com/docs/web-api-ref/authentication
 https://dev.epicgames.com/portal
 
 :::note
-Note that the AccessToken in this example will not work for creating a RoomToken as that requires a TrustedServer Client. You must use the Connect interface for this.
+Note that the AccessToken in this example will not work for creating a RoomToken as that requires a TrustedServer Client. Use **RequestAccessToken** from the Connect category for this, see [Web API](./introduction.md#access-tokens).
 
 **Note that this authentication flow is not supported on Mobile devices.**
 :::
@@ -29,7 +29,7 @@ Before getting started we need to setup our Redirect URL, the web browser will r
 ![Image](../../../static/img/web/2-1.jpg)
 
 ## Initiate Epic Authentication
-- You can use the Web plugin to Authenticate using Epic Accounts to get a Epic Account AccessToken, lets take a look at an example.
+- You can use the EOSCoreWeb functions to Authenticate using Epic Accounts to get a Epic Account AccessToken, lets take a look at an example.
 - The first step is to invoke “InitiateEpicAuthentication”, this node will attempt to open a Web Browser for the user so that they can authenticate with their Epic Account, after they’ve authenticated they will be redirected to the “Redirect URI” parameter. In this example you’ll be redirected to the eelDev host where the plugin will attempt to get the Authentication Code returned from Epic.
 - Feel free to use your own web host for the Redirect URL.
 

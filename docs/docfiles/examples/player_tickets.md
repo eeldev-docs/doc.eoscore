@@ -1,5 +1,5 @@
 # Player Tickets
-You can now use the PlayerTickets Web API with the new EOSCoreWeb module, this feature allows your players to submit In-Game tickets for ban-appeals, questions or whatever you want the player to be able to submit to you.
+You can use the PlayerTickets Web API with the EOSCoreWeb functions, see [Web API](../web/introduction.md). This feature allows your players to submit In-Game tickets for ban-appeals, questions or whatever you want the player to be able to submit to you.
 
 :::tip TIP
 This Example has a Video Tutorial that you can find here: [Related Video](../videos/player-tickets.mdx)

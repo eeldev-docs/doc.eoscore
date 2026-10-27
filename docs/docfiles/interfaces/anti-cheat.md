@@ -40,4 +40,4 @@ Without a trusted server, every client registers the other players with `EOS_Ant
 The server can send gameplay events to the Anti-Cheat backend for analysis, for example `EOS_AntiCheatServer_LogPlayerSpawn`, `EOS_AntiCheatServer_LogPlayerTakeDamage`, `EOS_AntiCheatServer_LogGameRoundStart` and `EOS_AntiCheatServer_LogGameRoundEnd`.
 
 ## Reports and Sanctions
-Players can report each other with `EOS_Reports_SendPlayerBehaviorReport`. Use `EOS_Sanctions_QueryActivePlayerSanctions` to check if a player is banned, and the [EOSCore Web](../../docfiles-web/introduction.md) sanctions functions to create sanctions from a server or tool.
+Players can report each other with `EOS_Reports_SendPlayerBehaviorReport`. Use `EOS_Sanctions_QueryActivePlayerSanctions` to check if a player is banned, and the [Web API](../web/introduction.md) sanctions functions to create sanctions from a server or tool.

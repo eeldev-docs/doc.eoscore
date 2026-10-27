@@ -20,6 +20,6 @@ slug: /
 - [Troubleshooting](./docfiles/troubleshooting.md)
 
 ## More
-- [Example projects](./example-project.md) for Blueprint, C++, Web and Voice
+- [Example projects](./example-project.md) for Blueprint, C++ and Web
 - [Video tutorials](./docfiles/videos/installing-and-configuring.mdx)
 - Support on [Discord](https://discord.gg/3Yu7pEy)

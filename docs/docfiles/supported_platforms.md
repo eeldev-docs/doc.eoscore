@@ -27,7 +27,7 @@ For the engine versions of the current release, see the [Fab listing](https://ww
 |---|---|
 | **EOSCore** | Blueprint functions and async nodes for the EOS SDK interfaces (Auth, Connect, Sessions, Lobby, P2P, Stats, Leaderboards, Achievements, Player Data Storage, Title Storage, Ecom, Presence, Friends, UserInfo, UI, RTC, Chat, Anti-Cheat, Sanctions, Reports, Mods, Metrics, Custom Invites, Progression Snapshot) |
 | **OnlineSubsystemEOSCore** | The `EOSCore` Online Subsystem, NetDriver and socket subsystem for EOS P2P |
-| **EOSCoreWeb** | Blueprint functions for the EOS Web API (Auth, Connect, Player Tickets, Sanctions, Anti-Cheat status, Voice) |
+| **EOSCoreWeb** | Blueprint functions for the EOS Web API (Auth, Connect, Player Tickets, Sanctions, Anti-Cheat status, Voice), see [Web API](./web/introduction.md) |
 | **EOSCoreShared** | Types shared between the modules |
 
 ## Online Subsystem Interfaces

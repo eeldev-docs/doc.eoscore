@@ -15,7 +15,3 @@ You can download a simple C++ Example project from the link below:
 ## Web Example Project
 You can download this example project from github here:
 - https://github.com/eeldev-ue4/EOSWeb_Example/releases
-
-## Voice Example Project
-You can download this example project from github here:
-- https://github.com/eeldev-ue4/EOSVoice_Example/releases
