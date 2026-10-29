@@ -51,16 +51,10 @@ const sidebars = {
       id: 'faq'
     },
     {
-      type: 'doc',
-      id: 'changelog'
-    },
-    /*
-    {
       type: 'link',
-      label: 'Plugin Updates',
-      href: 'http://changelogs.eeldev.com/',
+      label: 'Changelog',
+      href: 'https://eeldev.com/?s=eoscore',
     },
-    */
     {
       type: 'html',
       value: '<div class=\"eel-sidebar-section\">EOSCore Documentation</div>',
