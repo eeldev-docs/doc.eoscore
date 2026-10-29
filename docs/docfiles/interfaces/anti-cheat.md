@@ -40,4 +40,21 @@ Without a trusted server, every client registers the other players with `EOS_Ant
 The server can send gameplay events to the Anti-Cheat backend for analysis, for example `EOS_AntiCheatServer_LogPlayerSpawn`, `EOS_AntiCheatServer_LogPlayerTakeDamage`, `EOS_AntiCheatServer_LogGameRoundStart` and `EOS_AntiCheatServer_LogGameRoundEnd`.
 
 ## Reports and Sanctions
-Players can report each other with `EOS_Reports_SendPlayerBehaviorReport`. Use `EOS_Sanctions_QueryActivePlayerSanctions` to check if a player is banned, and the [Web API](../web/introduction.md) sanctions functions to create sanctions from a server or tool.
+Players can report each other with `EOS_Reports_SendPlayerBehaviorReport`. Use `EOS_Sanctions_QueryActivePlayerSanctions` to check if a player is banned, and the [Web API](../web/introduction.md) sanctions functions to create sanctions from a server or tool. Reports and Sanctions use the Product User Id (Connect login), and must be allowed in your client policy.
+
+### Reporting a player
+![Send a player behavior report](../../../static/img/interfaces_reports_send.png)
+
+The **ReportCheater** event reports the player in **Reported Player** for cheating:
+
+1. **Reporter User Id** is the local player, from **Get Current Product Id**. **Reported User Id** is the Product User Id of the other player, for example from the lobby or session members.
+2. **Report Category** is the reason, here **EOS PRC Cheating**. **Message** is optional text from the player, and **Context** is optional JSON your tools can read.
+
+### Checking sanctions
+![Query active sanctions](../../../static/img/interfaces_sanctions_query.png)
+
+The **CheckSanctions** event lists the active sanctions of the player in **Target Player**, for example when a player joins your server:
+
+1. **EOS_Sanctions_QueryActivePlayerSanctions** downloads the active sanctions of **Target User Id**.
+2. When the query succeeds, **EOS_Sanctions_GetPlayerSanctionCount** returns the number of sanctions, and the **For Loop** reads each one with **EOS_Sanctions_CopyPlayerSanctionByIndex**.
+3. **Action** is the action string the sanction was created with. Kick or block the player when it is one your game treats as a ban.
