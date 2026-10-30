@@ -20,6 +20,7 @@ The Ecom interface handles offers, purchases and entitlements for games sold on 
 | `EOS_Ecom_GetEntitlementsCount` + `EOS_Ecom_CopyEntitlementByIndex` | Reads entitlements |
 | `EOS_Ecom_QueryOwnership` | Checks if the player owns specific catalog items, for example DLC |
 | `EOS_Ecom_RedeemEntitlements` | Marks consumable entitlements as redeemed |
+| `EOS_Ecom_GetLastRedeemEntitlementsResultCount` + `EOS_Ecom_CopyLastRedeemEntitlementsResultByIndex` | Reads which entitlement ids the last redeem call changed |
 | `EOS_Ecom_QueryOwnershipToken` / `EOS_Ecom_QueryEntitlementToken` | Signed tokens your backend can verify |
 
 ## Example

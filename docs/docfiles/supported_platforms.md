@@ -4,7 +4,7 @@
 
 | | Version |
 |---|---|
-| EOSCore | 1.9.8.9 |
+| EOSCore | 2.0.0 |
 | EOS SDK (included) | 1.19.2 (hotfix 1) |
 
 For the engine versions of the current release, see the [Fab listing](https://www.fab.com/listings/8e78818d-4662-4c6d-8ab2-6e22b9d3595e). Older engine versions are available on [Gumroad](https://eeldev.gumroad.com/l/eoscore).

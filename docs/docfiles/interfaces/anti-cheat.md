@@ -33,6 +33,14 @@ Use this mode with a dedicated or listen server.
 3. `EOS_AntiCheatClient_ReceiveMessageFromServer` for each anti-cheat message from the server
 4. `EOS_AntiCheatClient_AddNotifyClientIntegrityViolated`: the client is not protected
 
+### Module and system checks
+Two client nodes check the anti-cheat module that the bootstrapper loaded:
+
+- `EOS_AntiCheatClient_GetModuleBuildId` returns the build id of the loaded module, useful in logs and bug reports.
+- `EOS_AntiCheatClient_GetSystemRequirementStatus` checks one **Client System Config**, for example the crypto processor (TPM), and returns **Fully Met**, **Met With Warning** or **Not Met** with a reason.
+
+Both return **EOS_NotFound** when the game was started without the anti-cheat bootstrapper.
+
 ## Peer-to-Peer Mode
 Without a trusted server, every client registers the other players with `EOS_AntiCheatClient_RegisterPeer`, and forwards messages with `EOS_AntiCheatClient_AddNotifyMessageToPeer` and `EOS_AntiCheatClient_ReceiveMessageFromPeer`.
 

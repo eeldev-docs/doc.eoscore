@@ -36,6 +36,20 @@ The Client Secret is stored in DefaultEngine.ini and ships with your game. Use a
 | **Android Client Id** | `AndroidClientId` | Client Id used for the Android login redirect, see [Android Setup](./mobile/android-setup.md) |
 | **Disable EOS Overlay** | `bDisableEOSOverlay` | Disables the EOS overlay. Same as the `-DisableEOSOverlay` command line argument |
 
+## Steam Integrated Platform
+Registers Steam as an [Integrated Platform](./interfaces/integrated-platform.md) when the EOS platform is created (Windows, Linux and Mac). EOS then mirrors presence and sessions to Steam and follows the Steam login state.
+
+| Setting | ini key | Description |
+|---|---|---|
+| **Enable Steam Integrated Platform** | `bEnableSteamIntegratedPlatform` | Turns the integration on. Default `false` |
+| **Steam Major Version** | `SteamMajorVersion` | Major version of the Steamworks SDK the game is built with. Default `1` |
+| **Steam Minor Version** | `SteamMinorVersion` | Minor version of the Steamworks SDK, for example `64` for UE 5.8 (Steamworks 1.64). Must be set, the integration is skipped while it is `0` |
+| **Steam Disable Presence Mirroring** | `bSteamDisablePresenceMirroring` | Stops EOS from copying presence to Steam |
+| **Steam Disable SDK Managed Sessions** | `bSteamDisableSDKManagedSessions` | Stops EOS from creating Steam sessions for EOS sessions and lobbies |
+| **Steam Prefer Integrated Identity** | `bSteamPreferIntegratedIdentity` | Shows Steam names instead of Epic names where both exist |
+
+The Steam library is managed by the game, so the Steam Online Subsystem (or your own code) must initialize Steam before EOSCore creates the platform.
+
 ## ini-only Settings
 These keys are not shown in Project Settings. Add them to the same section in DefaultEngine.ini.
 

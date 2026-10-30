@@ -1,5 +1,5 @@
 ---
-sidebar_position: 13
+sidebar_position: 16
 ---
 
 # Sessions
@@ -22,6 +22,7 @@ For most games, the Online Subsystem nodes in [Creating a Session](../multiplaye
 | `EOS_Sessions_UpdateSessionModification` | Starts changes to a session you already created |
 | `EOS_SessionModification_AddAttributeString` (also `Bool`, `Int64`, `Double`) | Adds an attribute that searches can filter on |
 | `EOS_SessionModification_SetHostAddress` | Sets the address players connect to |
+| `EOS_SessionModification_SetAllowedPlatformIds` | Limits which platforms can join the session |
 | `EOS_Sessions_UpdateSession` | Creates or updates the session on the backend |
 | `EOS_Sessions_CreateSessionSearch` | Starts a search and returns a search handle |
 | `EOS_SessionSearch_SetParameterString` (also `Bool`, `Int64`, `Double`) | Adds a filter to the search |
@@ -32,6 +33,9 @@ For most games, the Online Subsystem nodes in [Creating a Session](../multiplaye
 | `EOS_Sessions_StartSession`, `EOS_Sessions_EndSession` | Marks the game as started or ended |
 | `EOS_Sessions_RegisterPlayers`, `EOS_Sessions_UnregisterPlayers` | The owner adds or removes players that connected or left |
 | `EOS_Sessions_DestroySession` | Removes the session |
+| `EOS_Sessions_AddNotifySessionInviteRejected` | Called when the player rejects a session invite |
+| `EOS_Sessions_AddNotifyLeaveSessionRequested` | Called when the player chooses to leave the session in the platform UI |
+| `EOS_Sessions_AddNotifySendSessionNativeInviteRequested` | Called when the player wants to invite through the platform's own invite UI |
 
 ## Example
 

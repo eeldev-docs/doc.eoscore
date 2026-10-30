@@ -24,6 +24,7 @@ Achievements are defined in the Developer Portal (**Game Services > Achievements
 | `EOS_Achievements_GetAchievementDefinitionCount` + `EOS_Achievements_CopyAchievementDefinitionV2ByIndex` | Reads the downloaded definitions |
 | `EOS_Achievements_QueryPlayerAchievements` | Downloads the progress and unlock state for a player |
 | `EOS_Achievements_GetPlayerAchievementCount` + `EOS_Achievements_CopyPlayerAchievementByIndex` | Reads the player's achievements |
+| `EOS_Achievements_CopyPlayerAchievementByAchievementId` | Reads one achievement of the player by its id |
 | `EOS_Achievements_UnlockAchievements` | Unlocks one or more achievements by id |
 | `EOS_Achievements_AddNotifyAchievementsUnlockedV2` | Called when an achievement was unlocked, also for stat based unlocks |
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 12
 ---
 
 # Overlay (UI)
@@ -24,6 +24,8 @@ The overlay is only drawn in a Standalone or packaged game, not in Play In Edito
 | `EOS_UI_AddNotifyDisplaySettingsUpdated` | Called when the overlay opens or closes |
 | `EOS_UI_ShowBlockPlayer`, `EOS_UI_ShowReportPlayer` | Opens the dialog to block or report a player |
 | `EOS_UI_PauseSocialOverlay`, `EOS_UI_IsSocialOverlayPaused` | Stops the overlay from opening, for example during a cutscene |
+| `EOS_UI_ConfigureOnScreenKeyboard` + `EOS_UI_AddNotifyOnScreenKeyboardRequested` | Lets the game show its own on-screen keyboard when the overlay needs text input |
+| `EOS_UI_AddNotifyMemoryMonitor` | Called when the overlay asks the game to free memory, on consoles |
 
 ## Example
 ![Show the friends overlay](../../../static/img/interfaces_ui_overlay.png)

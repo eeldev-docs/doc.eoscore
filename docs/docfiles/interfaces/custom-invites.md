@@ -25,6 +25,7 @@ Custom Invites send an invite with your own text payload to other players, for e
 | `EOS_CustomInvites_SendRequestToJoin` | Asks another player to invite you |
 | `EOS_CustomInvites_AddNotifyRequestToJoinReceived` | Called when another player asks to join you |
 | `EOS_CustomInvites_AcceptRequestToJoin`, `EOS_CustomInvites_RejectRequestToJoin` | Answers a request to join |
+| `EOS_CustomInvites_DisableRequestToJoin` | Stops other players from sending requests to join you |
 
 ## Example
 

@@ -44,6 +44,7 @@ Call **BindFriendsNotifications** once after login. **EOS_Friends_AddNotifyFrien
 |---|---|
 | `EOS_Presence_CreatePresenceModification` | Creates a modification handle |
 | `EOS_PresenceModification_SetStatus`, `SetRawRichText`, `SetData`, `SetJoinInfo` | Online status, rich text ("In a match"), key/value data and the join info friends use to join you |
+| `EOS_PresenceModification_SetTemplateId`, `SetTemplateData` | Rich presence from a localized template set up in the Developer Portal, with values for its placeholders |
 | `EOS_Presence_SetPresence` | Sends the modification, then `EOS_PresenceModification_Release` |
 | `EOS_Presence_QueryPresence` + `EOS_Presence_CopyPresence` | Reads a friend's presence |
 | `EOS_Presence_AddNotifyOnPresenceChanged` | Called when a friend's presence changes |

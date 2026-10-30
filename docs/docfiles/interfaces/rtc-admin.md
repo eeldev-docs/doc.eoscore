@@ -1,5 +1,5 @@
 ---
-sidebar_position: 17
+sidebar_position: 20
 ---
 
 # Voice Moderation (RTC Admin)
@@ -36,4 +36,4 @@ The example uses the variables **Room Name**, the voice room, and **Target Playe
 A hard mute is different from a local mute: no other player in the room hears the muted player, and the player can't unmute themselves. To let each player mute others only for themselves, use the RTC Audio nodes in the game client instead.
 
 ## Notes
-- EOSCore has a **Get RTCData** node for the RTC Data interface, but no RTC Data nodes yet.
+- To send data between the players in a room, see [RTC Data](./rtc-data.md).

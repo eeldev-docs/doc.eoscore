@@ -15,7 +15,7 @@ Start by turning on [Additional Logging](./additional_logging.md) and read the l
 
 ## The plugin does not start
 
-- **"Failed to load EOS third party library"**: the EOS SDK binary next to the plugin could not be loaded. Check that `Plugins/EOSCore/Source/ThirdParty/EOSLibrary/Bin` exists in your build and that no other EOS SDK version is loaded.
+- **"Failed to load EOS third party library"**: the EOS SDK binary next to the plugin could not be loaded. Check that `Plugins/EOSCore/Source/ThirdParty/EOSLibrary/Bin` exists in your build and that no other EOS SDK version is loaded. The **EOS_GetVersion** node returns the version of the EOS SDK that was loaded, so you can check it in a packaged build.
 - **Warnings about EOSShared, OnlineSubsystemEOS, EOSVoiceChat or SocketSubsystemEOS** in the editor log: one of the engine's EOS plugins is enabled. Disable them, or add `[EOSSDK] bHasProjectBinary=true`, see [Installing the Plugin](./getting_started/installing_plugin.md).
 - **Nothing happens at all**: check that `[OnlineSubsystem] DefaultPlatformService=EOSCore` is set and that `bEnabled` is not `false`, see [Configuring Online Subsystem](./getting_started/configuring_subsystem.md).
 
